@@ -42,15 +42,15 @@ i. “Data_Assembly.do” assembles the primary data files that use the base ass
 
 ii.	“DDD_Analysis.do” performs the core data analysis. The file generates descriptive data visuals and tables, restructures the data to allow for the model design described in the paper, and performs the regression analysis. This file saves a log file tilted “Data_Analysis.smcl.” The key elements and associated results in this file are each described below:
 
-    1. The file first generates the chart presented as Figure 4 of the main paper using descriptive data and saves the file with a corresponding name in the “Charts” folder.
+1. The file first generates the chart presented as Figure 4 of the main paper using descriptive data and saves the file with a corresponding name in the “Charts” folder.
 
-    2.	The file then restructures the data and creates key variables to facilitate the regression analysis. After doing so, it generates a table of summary statistics and exports this table as an Excel file named “dstats.xlsx” to the “Tables” folder.
+2.	The file then restructures the data and creates key variables to facilitate the regression analysis. After doing so, it generates a table of summary statistics and exports this table as an Excel file named “dstats.xlsx” to the “Tables” folder.
 
-    3.	The file next preserves the data and runs the main regressions discussed in the paper, including both the OLS and IPW model versions, compiling the results in the “results.doc” file (included in Table 3 of the main document) and the 95 percent confidence interval for the IPW model in “ipw_CI.doc” (Table 4 of the main document). This and other regression files from this script are saved to the “Tables” folder.
+3.	The file next preserves the data and runs the main regressions discussed in the paper, including both the OLS and IPW model versions, compiling the results in the “results.doc” file (included in Table 3 of the main document) and the 95 percent confidence interval for the IPW model in “ipw_CI.doc” (Table 4 of the main document). This and other regression files from this script are saved to the “Tables” folder.
 
-    4.	The file next runs the sensitivity case presented in section I and Table 1 of Appendix B, because this sensitivity case runs on the same data as the main analysis. This analysis drops observations to test the model’s sensitivity to their omission. The script compiles these results in the file “results_droppedobs.doc.”
+4.	The file next runs the sensitivity case presented in section I and Table 1 of Appendix B, because this sensitivity case runs on the same data as the main analysis. This analysis drops observations to test the model’s sensitivity to their omission. The script compiles these results in the file “results_droppedobs.doc.”
 
-    5.	The file next performs the counterfactual comparison analysis described in Appendix C, with the results viewable in the log file for the analysis.
+5.	The file next performs the counterfactual comparison analysis described in Appendix C, with the results viewable in the log file for the analysis.
 
 iii.	The files “DDD_Analysis_1518.do” and “DDD_Analysis_1821.do” perform regression analyses that are substantially the same as the primary regression analysis in “DDD_Analysis.do,” but with the post-treatment period shifted back to the years 2015 through 2018 and 2018 through 2021. These files produce the results presented in Table 5 of the main document. The script compiles the results from the 2015-2018 analysis in “results_1518yr.doc” and the results from the 2018-2021 analysis in “results_1821yr.doc” in the “Tables” folder.
 
