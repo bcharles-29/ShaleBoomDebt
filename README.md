@@ -4,7 +4,7 @@ Shale Boom Municipal Debt Replication Files
 # 1. Introduction
 The analysis is structured as a sequence of script files processing raw data, generating variables and identifying groups of communities for analysis, merging data files into a single file for analysis, and finally analyzing the data. The scripts save intermediate data files and final outputs in separate folders for organization purposes. 
 
-For this reason, each script includes locals identifying directories used by the script for ease of specifying the user’s desired directories. Thus, prior to running each file, the user will need to define each of these locals using their own preferred directories. There are always less than five of these and they appear near the beginning of each Stata .do file labeled “DIRECTORIES.” The scripts in sections 2 through 4 must be run in order.
+For this reason, each script includes local macros identifying directories used by the script. These appear near the beginning of each Stata .do file labeled “DIRECTORIES” and are structured such that they should not require modification by the user. The scripts in sections 2 through 4 must be run in order.
 
 Due to the structure of the data used in the final analyses, multiple versions of the main .do files exist for purposes of running the different scenarios used. These files, the folders they are contained in, their use, and their outputs are detailed in the step-by-step instructions below for clarity.
 
