@@ -1,1 +1,1 @@
-Placeholder
+This folder stores Stata files produced during the analysis.
