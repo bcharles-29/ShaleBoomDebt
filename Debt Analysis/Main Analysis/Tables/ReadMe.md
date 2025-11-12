@@ -1,0 +1,1 @@
+This folder stores data and results tables generated during the analysis.
